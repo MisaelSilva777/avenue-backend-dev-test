@@ -1,6 +1,6 @@
 # File Uploader
 
-Dado um arquivo de instruments e precisamos fazer o upload desse arquivo para um serviço que irá armazena-lo em um lugar seguro. Depois que ele estiver salvo, gostaríamos de poder lê-lo linha por linha, determinando qual o range de linhas que queremos ler.
+Precisamos de um serviço que seja capaz de receber arquivos e armazena-los em um lugar seguro. Depois de salvos, precisamos ler esses arquivos linha por linha, determinando qual o range de linhas que queremos ler.
 
 ## Instruções
 
@@ -11,11 +11,11 @@ Dado um arquivo de instruments e precisamos fazer o upload desse arquivo para um
 
 _Oberservações_
 
-Se tiver dúvida durante o teste ou quiser tirar dúvidas, sinta-se à vontade procure a pessoa que irá revisar seu código (LinkedIn/e-mail).
+Se tiver dúvida durante o teste ou quiser tirar dúvidas, fique à vontade para procurar a pessoa que irá revisar seu código (LinkedIn/e-mail).
 
 ## Problema
 
-Dado um arquivo (data/nasdaq_symbols.csv), faça o upload dele para algum backend de storage (GCS, S3, local filesystem...). Em um segundo momento, queremos poder ler esse arquivo por um range de linhas
+Dado um arquivo (data/nasdaq_symbols.csv), faça o upload para algum backend de armazenamento (GCS, S3, local filesystem). Em um segundo momento, queremos poder ler esse arquivo por um range de linhas
 
 _Oberservações_
 
@@ -25,7 +25,7 @@ Não se preocupe em manter estado de arquivos anteriores. Você pode manter o es
 
 1. O upload deve ser realizado através de uma chamda HTTP
 2. O upload deve gerar um identificador, que será utilizado para requisições futuras
-2. O arquivo deve ser lido pelo seu identificator através de chamadas HTTP, especificando o `offset` e o `limit` de linhas que devem ser retornadas.
+3. O arquivo deve ser lido pelo seu identificator através de chamadas HTTP, especificando o `offset` e o `limit` de linhas que devem ser retornadas.
 
 
 _Oberservações_
