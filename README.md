@@ -1,6 +1,6 @@
 # File Uploader
 
-Precisamos de um serviço que seja capaz de receber arquivos e armazena-los em um lugar seguro. Depois de salvos, precisamos ler esses arquivos linha por linha, determinando qual o range de linhas que queremos ler.
+Precisamos de um serviço que seja capaz de receber arquivos e armazena-los em um lugar seguro. Depois de salvos, precisamos ler esses arquivos em chunks, determinando o tamanho do chunck que queremos ler.
 
 ## Instruções
 
@@ -15,7 +15,7 @@ Se tiver dúvida durante o teste ou quiser tirar dúvidas, fique à vontade para
 
 ## Problema
 
-Dado um arquivo (data/nasdaq_symbols.csv), faça o upload para algum backend de armazenamento (GCS, S3, local filesystem). Em um segundo momento, queremos poder ler esse arquivo por um range de linhas
+Dado um arquivo (data/nasdaq_symbols.csv), faça o upload para algum backend de armazenamento (GCS, S3, local filesystem). Em um segundo momento, vamos ler esse arquivo chuncks.
 
 _Oberservações_
 
@@ -25,7 +25,7 @@ Não se preocupe em manter estado de arquivos anteriores. Você pode manter o es
 
 1. O upload deve ser realizado através de uma chamda HTTP
 2. O upload deve gerar um identificador, que será utilizado para requisições futuras
-3. O arquivo deve ser lido pelo seu identificator através de chamadas HTTP, especificando o `offset` e o `limit` de linhas que devem ser retornadas.
+3. O arquivo deve ser lido pelo seu identificator através de chamadas HTTP, especificando o `offset` e o `length` do chunk que deve ser retornado.
 
 
 _Oberservações_
