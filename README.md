@@ -28,6 +28,11 @@ Não se preocupe em manter estado de arquivos anteriores. Você pode manter o es
 3. O upload deve gerar um identificador, que será utilizado para requisições futuras
 4. O arquivo deve ser lido pelo seu identificator através de chamadas HTTP, especificando o `offset` e o `length` do chunk que deve ser retornado.
 6. Utilizar dois backends de amarzenamento. Qual backend utilizar deve uma configuração. Ex: GCS e FS, S3 e GCS, etc... 
+7. Não utilizar nenhuma conexão directa com o cloud provider, utilize serviços de mock como:  
+  a. [Fake GCS](https://github.com/fsouza/fake-gcs-server)  
+  b. [Fake S3](https://github.com/jubos/fake-s3)  
+  c. Existem outras opções, fique à vontade para escolher  
+  d. Iremos testar o seu serviço utilizando o mesmo mock que você
 
 _Oberservações_
 
@@ -37,12 +42,8 @@ Não se preocupe com indentação/formatação ao retornar as linhas, assuma que
 
 1. Ser possível rodar através de um container
 2. Eventuais scripts para algum tipo de configuração
-3. Não depender de nenhuma núvem para subir o arquivo:  
-  a. [Fake GCS](https://github.com/fsouza/fake-gcs-server)  
-  b. [Fake S3](https://github.com/jubos/fake-s3)  
-  c. Existem outras opções, fique à vontade para escolher  
-4. `docker-compose` para subir a stack completa
-5. `README` explicando sobre padrões e decisões de implementação 
+3. `docker-compose` para subir a stack completa
+4. `README` explicando sobre padrões e decisões de implementação 
 
 ## Avaliação
 
