@@ -23,9 +23,10 @@ Não se preocupe em manter estado de arquivos anteriores. Você pode manter o es
 
 ## Requisitos
 
-1. O upload deve ser realizado através de uma chamda HTTP
-2. O upload deve gerar um identificador, que será utilizado para requisições futuras
-3. O arquivo deve ser lido pelo seu identificator através de chamadas HTTP, especificando o `offset` e o `length` do chunk que deve ser retornado.
+1. O código deve ser escrito utilizando Go
+2. O upload deve ser realizado através de uma chamda HTTP
+3. O upload deve gerar um identificador, que será utilizado para requisições futuras
+4. O arquivo deve ser lido pelo seu identificator através de chamadas HTTP, especificando o `offset` e o `length` do chunk que deve ser retornado.
 6. Utilizar dois backends de amarzenamento. Qual backend utilizar deve uma configuração. Ex: GCS e FS, S3 e GCS, etc... 
 
 _Oberservações_
