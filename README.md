@@ -1,6 +1,6 @@
 # File Uploader
 
-Dado um arquivo de instruments e precisamos fazer o upload desse arquivo para um serviço que irá armazena-lo em um lugar seguro. Depois que ele estiver salvo, gostaríamos de poder lê-lo linha por linha, determinando qual o range de linhas que queremos ler.
+Precisamos de um serviço que seja capaz de receber arquivos e armazena-los em um lugar seguro. Depois de salvos, precisamos ler esses arquivos linha por linha, determinando qual o range de linhas que queremos ler.
 
 ## Instruções
 
