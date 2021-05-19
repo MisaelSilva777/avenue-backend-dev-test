@@ -11,11 +11,11 @@ Precisamos de um serviço que seja capaz de receber arquivos e armazena-los em u
 
 _Oberservações_
 
-Se tiver dúvida durante o teste ou quiser tirar dúvidas, sinta-se à vontade procure a pessoa que irá revisar seu código (LinkedIn/e-mail).
+Se tiver dúvida durante o teste ou quiser tirar dúvidas, fique à vontade para procurar a pessoa que irá revisar seu código (LinkedIn/e-mail).
 
 ## Problema
 
-Dado um arquivo (data/nasdaq_symbols.csv), faça o upload dele para algum backend de storage (GCS, S3, local filesystem...). Em um segundo momento, queremos poder ler esse arquivo por um range de linhas
+Dado um arquivo (data/nasdaq_symbols.csv), faça o upload para algum backend de armazenamento (GCS, S3, local filesystem). Em um segundo momento, queremos poder ler esse arquivo por um range de linhas
 
 _Oberservações_
 
