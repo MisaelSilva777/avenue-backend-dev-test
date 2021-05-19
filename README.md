@@ -24,7 +24,8 @@ Não se preocupe em manter estado de arquivos anteriores. Você pode manter o es
 ## Requisitos
 
 1. O upload deve ser realizado através de uma chamda HTTP
-2. O arquivo deve ser lido através de chamadas HTTP, especificando o `offset` e o `limit` de linhas que devem ser retornadas.
+2. O upload deve gerar um identificador, que será utilizado para requisições futuras
+2. O arquivo deve ser lido pelo seu identificator através de chamadas HTTP, especificando o `offset` e o `limit` de linhas que devem ser retornadas.
 
 
 _Oberservações_
@@ -41,6 +42,7 @@ Não se preocupe com indentação/formatação ao retornar as linhas, assuma que
   c. Existem outras opções, fique à vontade para escolher  
 4. `docker-compose` para subir a stack completa
 5. `README` explicando sobre padrões e decisões de implementação 
+6. Multiplos backends de armazenamento. Qual backend utilizar pode ser uma configuração.
 
 ## Avaliação
 
