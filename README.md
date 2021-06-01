@@ -4,7 +4,7 @@ Precisamos de um serviço que seja capaz de receber arquivos e armazena-los em u
 
 ## Instruções
 
-1. Faça um `fork` __privado__ desse repositório
+1. Crie um repositório privado no seu GitHub
 2. Desenvolva o projeto em seu repositório
 3. Quando terminar, dê acesso à pessoa do nosso time que irá revisar o código
 4. Avise ao Recruiter que você terminou
@@ -49,7 +49,7 @@ Não se preocupe com indentação/formatação ao retornar as linhas, assuma que
 
 Esperamos que esse seja um desafio que você precise investir no máximo 2h. Entendemos que nem tudo estará da forma que você gostaria.
 
-1. Requisitos e Good to Haves são levados em consideração
+1. Requisitos e Good to Haves serão levados em consideração
 2. A eficiência do seu serviço deve ser o foco
 3. Código organizado, limpo e legível. Isso facilita entender suas decisões.
 4. Testes unitários (não foque em 100% de code coverage)
