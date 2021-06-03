@@ -30,7 +30,7 @@ Não se preocupe em manter estado de arquivos anteriores. Você pode manter o es
 6. Utilizar dois backends de amarzenamento. Qual backend utilizar deve uma configuração. Ex: GCS e FS, S3 e GCS, etc... 
 7. Não utilizar nenhuma conexão directa com o cloud provider, utilize serviços de mock como:  
   a. [Fake GCS](https://github.com/fsouza/fake-gcs-server)  
-  b. [Fake S3](https://github.com/jubos/fake-s3)  
+  b. [Local Stack](https://github.com/localstack/localstack)  
   c. Existem outras opções, fique à vontade para escolher  
   d. Iremos testar o seu serviço utilizando o mesmo mock que você
 
