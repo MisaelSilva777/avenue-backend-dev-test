@@ -19,9 +19,9 @@ Dado um arquivo (data/nasdaq_symbols.csv), faça o upload para algum backend de 
 2. O upload deve ser realizado através de uma chamada HTTP
 3. O upload deve gerar um identificador, que será utilizado para requisições futuras
 4. O arquivo deve ser lido pelo seu identificador através de chamadas HTTP, especificando o `offset` e o `length` do chunk que deve ser retornado
-5. Utilizar os dois backends de amarzenamento. Qual backend utilizar deve uma configuração
-  a. Implemente o armazenamento enviando para o file system ou para a memória
-  b. Não é necessário a integração com nenhum serviço (GCS, S3 e etc)
+5. Utilizar dois backends de amarzenamento. Qual backend utilizar deve uma configuração.  
+  a. Implemente o armazenamento enviando para o file system ou para a memória.  
+  b. Não é necessário a integração com nenhum serviço (GCS, S3 e etc).  
 
 ## Avaliação
 
