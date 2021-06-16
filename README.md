@@ -49,3 +49,7 @@ Esperamos que esse seja um desafio que você precise investir poucas horas. Ente
 3. *Não se preocupe em manter estado de arquivos anteriores*. Você pode manter o estado dos arquivos em memória. Não se preocupe com banco de dados.
 4. Não se preocupe com indentação/formatação ao retornar as linhas, assuma que o arquivo que vamos trabalhar sempre será um CSV. Então o esperado é que cada linha retornada seja uma linha do CSV.
 5. Procure utilizar o máximo possível a standard lib do Go.
+
+## Quer se candidatar?
+
+Nossas vagas estão publicadas no Kenoby. Você pode acessar [clicando aqui](https://jobs.kenoby.com/avenue)
